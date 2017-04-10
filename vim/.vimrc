@@ -10,4 +10,4 @@ source ~/.vim_runtime/my_configs.vim
 catch
 endtry
 set relativenumber
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-", " proprietary attribute \"ng-"];
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute " ,"trimming empty <", "unescaped &" , "lacks \"action", "is not recognized!", "discarding unexpected"]
