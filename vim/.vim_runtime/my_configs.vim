@@ -8,7 +8,8 @@ set rnu
 vmap <C-x> :!pbcopy<CR>
 vmap <C-c> :w !pbcopy<CR><CR>
 "not sure if necessary
-set clipboard=unnamed
+set clipboard=unnamedplus
+
 "don't try to be vi
 set nocompatible
 "search down into subfolders
