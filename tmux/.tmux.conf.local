@@ -34,7 +34,8 @@ tmux_conf_new_pane_reconnect_ssh=false
 #   - true
 #   - false (default)
 tmux_conf_new_session_prompt=false
-tm_of="#(osascript ~/.scripts/of.scpt)"
+#Omnifocus script
+tm_of="#(osascript ~/.dotfiles/scripts/of.scpt)"
 #-- display -------------------------------------------------------------------
 
 # RGB 24-bit colour support (since tmux 2.2), possible values are:
