@@ -1,9 +1,7 @@
+#dotfiles
+1. Clone to home directory
+`git clone https://github.com/mattpetters/dotfiles ~/.dotfiles`
+2. Run this:
 ```shell
-ln -sv “~/.dotfiles/{whatever}/{whatever}” ~
-```
-Or
-`ln -s -f .dotfiles/tmux/.tmux.conf`
-```shell
-ln -s -f .dotfiles/bash/.bash_profile
-ln -s -f .dotfiles/bash/.bashrc
+./link.sh
 ```
