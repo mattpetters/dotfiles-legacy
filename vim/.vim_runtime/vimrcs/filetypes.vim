@@ -43,7 +43,13 @@ function! JavaScriptFold()
     setl foldtext=FoldText()
 endfunction
 
+" JSBeautify
+autocmd BufWritePre FileType javascript <buffer> call JsBeautify()
 
+autocmd BufWritePre FileType json <buffer> call JsonBeautify()
+autocmd BufWritePre FileType jsx <buffer> call JsxBeautify()
+autocmd BufWritePre FileType html <buffer> call HtmlBeautify()
+autocmd BufWritePre FileType css <buffer> call CSSBeautify()
 """"""""""""""""""""""""""""""
 " => CoffeeScript section
 """""""""""""""""""""""""""""""
