@@ -1,7 +1,7 @@
-# ~/.tmuxinator/qtgdev.yml
+# ~/.tmuxinator/daily.yml
 
-name: qtgdev
-root: ~/
+name: dev
+root: ~/code/
 
 # Optional tmux socket
 # socket_name: foo
@@ -28,16 +28,21 @@ root: ~/
 # attach: false
 
 # Runs after everything. Use it to attach to tmux with custom options etc.
-# post: tmux -CC attach -t qtgdev
+# post: tmux -CC attach -t daily
 
 windows:
   - editor:
-      layout: main-vertical
+      layout: 8d79,204x63,0,0[204x51,0,0,0,204x11,0,52{102x11,0,52,1,101x11,103,52,5}]
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
         - vim
-        - guard
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log
+        - #
+        - #
+  - server: 
+      layout: 3082,204x63,0,0{102x63,0,0,3,101x63,103,0,4}
+      panes:
+        - #
+        - #
+  - news: newsbeuter 
