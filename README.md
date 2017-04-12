@@ -20,4 +20,7 @@ ie;
 ```shell
 spp [track name] #play a track
 spstop # stop spotify
-spp $spotprog #load the programming playlist (env var is the Spotify URI) ```
+spp $spotprog #load the programming playlist (env var is the Spotify URI) 
+
+```
+
