@@ -38,15 +38,15 @@ windows:
       # synchronize: after
       panes:
         - vim
-        - #
-        - #
+        - zsh && clear
+        - zsh && clear
   - server: 
       layout: 3082,204x63,0,0{102x63,0,0,3,101x63,103,0,4}
       panes:
-        - #
-        - #
+        - zsh && clear
+        - zsh && clear
   - news:  
       layout: 2f92,272x75,0,0[272x71,0,0,2,272x3,0,72,6]
       panes:
         - newsbeuter
-        - #
+        - zsh && clear
