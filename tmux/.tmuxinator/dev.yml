@@ -45,4 +45,8 @@ windows:
       panes:
         - #
         - #
-  - news: newsbeuter 
+  - news:  
+      layout: 2f92,272x75,0,0[272x71,0,0,2,272x3,0,72,6]
+      panes:
+        - newsbeuter
+        - #

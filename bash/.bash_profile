@@ -33,4 +33,4 @@ export PATH
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export EDITOR=vim
 source ~/.dotfiles/tmux/tmuxinator.bash
-source ~/.dotfiles/bash/scripts/aliases.bash
+source ~/.dotfiles/shells/scripts/common.sh
