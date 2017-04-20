@@ -50,3 +50,4 @@ windows:
       panes:
         - newsbeuter
         - zsh && clear
+  - wiki: vim ~/wiki/index.md  

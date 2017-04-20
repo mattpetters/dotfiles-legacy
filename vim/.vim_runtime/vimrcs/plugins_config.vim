@@ -167,3 +167,16 @@ nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+
+""""""""""""""""""""""
+" => JS Beautify 
+" """"""""""""""""""""
+
+:autocmd BufWritePre *.js :call JsBeautify()
+:autocmd BufWritePre *.jsx :call JsxBeautify()
+:autocmd BufWritePre *.json :call JsonBeautify()
+:autocmd BufWritePre *.css :call CSSBeautify()
+:autocmd BufWritePre *.html :call HtmlBeautify()
+
+
