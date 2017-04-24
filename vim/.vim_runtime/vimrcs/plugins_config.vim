@@ -172,11 +172,13 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """"""""""""""""""""""
 " => JS Beautify 
 " """"""""""""""""""""
-
+:function ToggleBeauty()
 :autocmd BufWritePre *.js :call JsBeautify()
 :autocmd BufWritePre *.jsx :call JsxBeautify()
 :autocmd BufWritePre *.json :call JsonBeautify()
 :autocmd BufWritePre *.css :call CSSBeautify()
 :autocmd BufWritePre *.html :call HtmlBeautify()
+:endfunction
+
 
 
