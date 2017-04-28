@@ -1,5 +1,7 @@
 # dotfiles
 
+![Sreenshot of config](http://i.imgur.com/WAecu44.jpg)
+
 1. Clone to home directory
 
 `git clone https://github.com/mattpetters/dotfiles ~/.dotfiles`
