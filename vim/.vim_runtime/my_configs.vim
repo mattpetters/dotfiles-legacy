@@ -18,3 +18,10 @@ set path+=**
 
 set splitbelow
 set splitright
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+" Colorscheme
+let g:onedark_termcolors=256
+colorscheme onedark
+set background=dark " for the dark version

@@ -5,5 +5,6 @@ alias sppt='spotify play track'
 alias sppa='spotify play album'
 alias spps='spotify play song'
 alias spstop='spotify stop'
+alias wonupDev='ssh -i "~/Downloads/wonupit.pem" ubuntu@ec2-35-163-168-79.us-west-2.compute.amazonaws.com'
 
 source ~/.dotfiles/bash/scripts/spotify_uris.bash

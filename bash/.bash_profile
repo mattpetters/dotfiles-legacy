@@ -1,5 +1,9 @@
 PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$"
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias ll="ls -lahG"
+alias cf="cd ~/code"
+alias sf="cd ~/Dropbox/School/Fall\ 2017/"
+alias pget="pirate-get"
 export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
@@ -19,7 +23,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 #            fortune | cowsay -f $THISCOW -W 100
 #}
 alias virtualenv2='~/Library/Python/2.7/bin/virtualenv'
-
+alias e="env |awk -F '=' '{print \$1 \" \" \$2}' | column -t"
 
 #fortune | cowsay | lolcat
 alias school="cd ~/Dropbox/School/Spring\ 2017/Homework/"
