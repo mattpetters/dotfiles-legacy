@@ -35,7 +35,7 @@ set guioptions-=L
 
 " Colorscheme
 " let g:onedark_termcolors=256
-" colorscheme onedark
+ colorscheme dracula
 " set background=dark " for the dark version
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE

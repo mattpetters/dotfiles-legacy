@@ -7,26 +7,11 @@ alias pget="pirate-get"
 export TERM=xterm-256color
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-#eval "$(rbenv init -)"
-#export NVM_DIR="/Users/mattpetters/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
-#export GOPATH=$HOME/go/go-mvc/
-# Cow-spoken fortunes every time you open a terminal
-#function cowsayfortune {
-#  NUMOFCOWS=`cowsay -l | tail -n +2 | wc -w`
-#    WHICHCOW=$((RANDOM%$NUMOFCOWS+1))
-#      THISCOW=`cowsay -l | tail -n +2 | sed -e 's/\ /\'$'\n/g' | sed $WHICHCOW'q;d'`
-#
-#         #echo "Selected cow: ${THISCOW}, from ${WHICHCOW}"
-#            fortune | cowsay -f $THISCOW -W 100
-#}
 alias virtualenv2='~/Library/Python/2.7/bin/virtualenv'
 alias e="env |awk -F '=' '{print \$1 \" \" \$2}' | column -t"
 
-#fortune | cowsay | lolcat
-alias school="cd ~/Dropbox/School/Spring\ 2017/Homework/"
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
