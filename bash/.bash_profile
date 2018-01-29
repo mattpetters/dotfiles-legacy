@@ -10,6 +10,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 alias virtualenv2='~/Library/Python/2.7/bin/virtualenv'
+alias vimpath='cd ~/.dotfiles/vim/.vim_runtime/'
 alias e="env |awk -F '=' '{print \$1 \" \" \$2}' | column -t"
 
 # Setting PATH for Python 2.7
