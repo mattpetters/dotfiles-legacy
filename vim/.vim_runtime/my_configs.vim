@@ -6,11 +6,6 @@ let g:vimfiler_as_default_explorer = 1
 "support line numbers
 set rnu
 hi Normal ctermbg=NONE
-"support copy and paste
-" vmap <C-x> :!pbcopy<CR>
-" vmap <C-c> :w !pbcopy<CR><CR>
-"not sure if necessary
-" set clipboard=unnamedplus
 let g:nd_themes = [
   \ ['0:00',  'challenger_deep', 'dark' ],
   \ ['6:00', 'one',            'light' ],
