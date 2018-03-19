@@ -13,9 +13,9 @@ cd ~/.dotfiles
 ./link.sh
 ```
 
-## Spotify Control
+~~## Spotify Control~~
 
-Includes some aliases for Spotify Control and shorthand env vars for frequent playlists:
+~~Includes some aliases for Spotify Control and shorthand env vars for frequent playlists:~~
 
 ie;
 
@@ -25,4 +25,6 @@ spstop # stop spotify
 spp $spotprog #load the programming playlist (env var is the Spotify URI) 
 
 ```
+
+I switched to Apple Music, so now the current playing track shows the iTunes song.
 
