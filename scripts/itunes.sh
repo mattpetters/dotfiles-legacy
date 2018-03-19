@@ -21,6 +21,10 @@ else if itunes_state is equal to "playing" then
   tell application "iTunes"
     set track_name to name of current track
     set artist_name to artist of current track
+    set threshold to 16
+    if length of track_name > threshold then
+        set track_name to characters 1 thru threshold of track_name as string & "..."
+    end if
     return track_name & " - #[bold]" & artist_name & "#[nobold]"
   end tell
 else
