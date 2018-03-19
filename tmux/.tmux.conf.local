@@ -156,8 +156,9 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
+ # set -g status-right '#[fg=colour245]⮃ %R ⮃ %d %b #[fg=colour254,bg=colour234,nobold]#(~/Documents/AppleScripts/itunes-current-track-tmux.sh)⮂#[fg=colour16,bg=colour254,bold] #h '
 tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} | #(echo $tm_of) '
-tmux_conf_theme_status_right='♫ #{spotify_status} #{spotify_artist}: #{spotify_track} | %a %h %d %y | #{prefix}#{pairing}#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %I:%M %p  ,| #{username}#{root} | #{hostname} '
+tmux_conf_theme_status_right='♫ #(~/.dotfiles/scripts/itunes.sh) #[fg=red]::#[fg=brightblue] %a %h %d %y #[fg=red]::#[fg=yellow] #{prefix}#{pairing}#{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} #[fg=red]::#[fg=green] %I:%M %p #[fg=red]::#[fg=white]  #{username}#{root} #[fg=red]::#[fg=red] #{hostname} '
 
 # status left style
 tmux_conf_theme_status_left_fg='#000000,#e4e4e4,#e4e4e4'  # black, white , white
@@ -241,3 +242,5 @@ tmux_conf_theme_clock_style='24'
 
 # move status line to top
 #set -g status-position top
+
+set-option -g default-shell /bin/zsh
