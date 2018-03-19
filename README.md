@@ -1,6 +1,6 @@
 # dotfiles
 
-![Sreenshot of config](http://i.imgur.com/dz7Iff1.jpg)
+![Sreenshot of config](https://i.imgur.com/xCnQrmG.png)
 
 1. Clone to home directory
 
