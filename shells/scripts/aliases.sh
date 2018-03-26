@@ -7,3 +7,4 @@ alias spps='spotify play song'
 alias spstop='spotify stop'
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 alias gac="git add --all && git commit"
+alias gits="git status"
