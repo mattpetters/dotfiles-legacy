@@ -8,3 +8,4 @@ alias spstop='spotify stop'
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 alias gac="git add --all && git commit"
 alias gits="git status"
+alias matrix='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'

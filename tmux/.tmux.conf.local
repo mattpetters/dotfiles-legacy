@@ -244,3 +244,9 @@ tmux_conf_theme_clock_style='24'
 #set -g status-position top
 
 set-option -g default-shell /bin/zsh
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
