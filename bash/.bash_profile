@@ -1,8 +1,8 @@
 PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$"
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias ll="ls -lahG"
+alias gac="git add --all && git commit"
 alias cf="cd ~/code"
-alias sf="cd ~/Dropbox/School/Fall\ 2017/"
 alias pget="pirate-get"
 export TERM=xterm-256color
 export CLICOLOR=1

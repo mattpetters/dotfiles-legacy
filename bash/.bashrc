@@ -13,3 +13,8 @@ PERL_LOCAL_LIB_ROOT="/Users/mattpetters/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCA
 PERL_MB_OPT="--install_base \"/Users/mattpetters/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/mattpetters/perl5"; export PERL_MM_OPT;
 export PATH=$PATH:/Applications/Rakudo/bin:/Applications/Rakudo/share/perl6/site/bin
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+(cat ~/.cache/wal/sequences &)
