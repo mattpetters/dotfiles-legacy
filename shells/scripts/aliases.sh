@@ -1,6 +1,7 @@
 alias ll='ls -la'
 alias dev='mux start dev'
 alias spp='spotify play'
+alias work="cd ~/Box\ Sync/Work/"
 alias sppt='spotify play track'
 alias sppa='spotify play album'
 alias spps='spotify play song'

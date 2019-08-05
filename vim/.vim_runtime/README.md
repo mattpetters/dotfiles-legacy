@@ -1,5 +1,8 @@
 # The Ultimate vimrc
 
+## NOTE - Matt
+- my colorscheme config lives in extended.vim. I need to change this at some point but for now it is still the case.
+
 Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
 
 There are two versions:

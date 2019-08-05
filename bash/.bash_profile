@@ -2,7 +2,6 @@ PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$"
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias ll="ls -lahG"
 alias cf="cd ~/code"
-alias sf="cd ~/Dropbox/School/Fall\ 2017/"
 alias pget="pirate-get"
 export TERM=xterm-256color
 export CLICOLOR=1
@@ -24,3 +23,4 @@ export PATH
 export EDITOR=vim
 source ~/.dotfiles/tmux/tmuxinator.bash
 source ~/.dotfiles/shells/scripts/common.sh
+export PATH=~/.bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/o39553/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/ChromeDriver
