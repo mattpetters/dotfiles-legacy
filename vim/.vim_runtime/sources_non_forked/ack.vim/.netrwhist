@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/mattpetters/wiki'
-let g:netrw_dirhist_2='/Users/mattpetters/code/learning/cloudfocus-backend'
-let g:netrw_dirhist_3='/Users/mattpetters/.dotfiles/vim/.vim_runtime/vimrcs'
-let g:netrw_dirhist_4='/Users/mattpetters/code/learning/cloudfocus-backend'
