@@ -4,7 +4,7 @@
 set nocompatible
 filetype off
 " init Vundle
-set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
+set rtp+=~/.dotfiles/vim/plugins/Vundle.vim
 
 call vundle#begin('~/.dotfiles/vim/plugins')
 
@@ -13,6 +13,13 @@ call vundle#begin('~/.dotfiles/vim/plugins')
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
+" change ctrlp command
+
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cmd = 'CtrlP'
 
 
 call vundle#end()

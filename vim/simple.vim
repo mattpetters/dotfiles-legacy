@@ -22,4 +22,3 @@ nnoremap k gk
 
 " jk is escape
 inoremap jk <esc>
-
