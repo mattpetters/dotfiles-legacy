@@ -8,7 +8,11 @@ set rtp+=~/.dotfiles/vim/bundle/Vundle.vim
 
 call vundle#begin('~/.dotfiles/vim/plugins')
 
+" Plugins live here
+
 Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'Valloric/YouCompleteMe'
 
 
 call vundle#end()
