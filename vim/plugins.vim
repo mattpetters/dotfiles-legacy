@@ -16,6 +16,8 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 
+Plugin 'tpope/vim-commentary'
+
 " change ctrlp command
 
 let g:ctrlp_map = '<c-f>'
