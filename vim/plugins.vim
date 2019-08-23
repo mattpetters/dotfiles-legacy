@@ -20,6 +20,8 @@ Plugin 'tpope/vim-commentary'
 
 Plugin 'mattn/emmet-vim'
 
+Plugin 'itchyny/lightline.vim'
+
 " change ctrlp command
 
 let g:ctrlp_map = '<c-f>'
