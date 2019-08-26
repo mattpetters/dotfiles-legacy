@@ -28,6 +28,11 @@ Plugin 'mxw/vim-jsx'
 "Async lint engine
 Plugin 'w0rp/ale'
 
+" vimfiler file explorer
+Plugin 'Shougo/unite.vim'
+Plugin 'Shougo/vimfiler.vim'
+:let g:vimfiler_as_default_explorer = 1
+
 " ALE Config
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
