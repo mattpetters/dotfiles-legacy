@@ -46,6 +46,8 @@ Plugin 'skywind3000/asyncrun.vim'
 " Run eslint on save
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
 
+" graphql support
+Plugin 'jparise/vim-graphql'
 
 " change ctrlp command
 
