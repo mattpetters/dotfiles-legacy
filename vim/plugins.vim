@@ -27,6 +27,14 @@ Plugin 'mxw/vim-jsx'
 
 "Async lint engine
 Plugin 'w0rp/ale'
+let g:ale_fixers = {
+ \ 'javascript': ['eslint']
+ \ }
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+let g:ale_fix_on_save = 1
+" ALE Config
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
 " vimfiler file explorer
 Plugin 'Shougo/unite.vim'
@@ -35,10 +43,6 @@ Plugin 'Shougo/vimfiler.vim'
 map <c-e> :VimFilerExplorer<CR>
 
 
-" ALE Config
-let g:ale_sign_error = '●' " Less aggressive than the default '>>'
-let g:ale_sign_warning = '.'
-let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
 " Async run
 Plugin 'skywind3000/asyncrun.vim'
