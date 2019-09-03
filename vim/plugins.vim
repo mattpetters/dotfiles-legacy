@@ -32,6 +32,8 @@ Plugin 'w0rp/ale'
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
 :let g:vimfiler_as_default_explorer = 1
+map <c-e> :VimFilerExplorer<CR>
+
 
 " ALE Config
 let g:ale_sign_error = '●' " Less aggressive than the default '>>'
