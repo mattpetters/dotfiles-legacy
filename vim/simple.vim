@@ -12,6 +12,7 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set autoread            " always read from disk
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 

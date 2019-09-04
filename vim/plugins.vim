@@ -36,6 +36,11 @@ let g:ale_fix_on_save = 1
 " ALE Config
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
+" Open quickfix easier
+map <c-q> :cw<CR>
+:set splitright
+
+
 " vimfiler file explorer
 Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimfiler.vim'
