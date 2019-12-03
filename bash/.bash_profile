@@ -24,3 +24,7 @@ export PATH
 export EDITOR=vim
 source ~/.dotfiles/tmux/tmuxinator.bash
 source ~/.dotfiles/shells/scripts/common.sh
+export ROLE_NAME=
+export INSTANCE_PROFILE_ARN=
+export ROLE_NAME=
+export INSTANCE_PROFILE_ARN=
