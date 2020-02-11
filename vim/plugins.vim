@@ -24,12 +24,22 @@ Plugin 'itchyny/lightline.vim'
 " Base JS and JSX react highlighting support
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+" surround vim
+Plugin 'tpope/vim-surround'
+
+"vim lsp
+
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/vim-lsp'
 
 "Async lint engine
 Plugin 'w0rp/ale'
 let g:ale_fixers = {
  \ 'javascript': ['eslint']
  \ }
+let g:ale_linters = {
+\   'javascript': ['flow-language-server'],
+\}
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let g:ale_fix_on_save = 1
