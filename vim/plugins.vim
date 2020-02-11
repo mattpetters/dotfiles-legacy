@@ -26,6 +26,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 " surround vim
 Plugin 'tpope/vim-surround'
+" abolish vim
+Plugin 'tpope/vim-abolish'
 
 "vim lsp
 
