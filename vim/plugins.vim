@@ -28,6 +28,10 @@ Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-surround'
 " abolish vim
 Plugin 'tpope/vim-abolish'
+" fugitive
+Plugin 'tpope/vim-fugitive'
+" indent lines
+Plugin 'Yggdroot/indentLine'
 
 "vim lsp
 
@@ -93,3 +97,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 call vundle#end()
 
 filetype plugin indent on
+
+" Disable quote concealing in JSON files
+let g:vim_json_conceal=0
