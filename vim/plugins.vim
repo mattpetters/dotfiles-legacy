@@ -8,7 +8,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/seoul256.vim'
-Plug 'Valloric/YouCompleteMe'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
