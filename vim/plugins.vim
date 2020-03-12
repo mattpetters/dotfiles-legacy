@@ -1,45 +1,39 @@
 " PLUGINS
-" Initialize Vundle and link to installed plugins
 
-set nocompatible
-filetype off
-" init Vundle
-set rtp+=~/.dotfiles/vim/plugins/Vundle.vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-call vundle#begin('~/.dotfiles/vim/plugins')
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/seoul256.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-commentary'
+Plug 'mattn/emmet-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-fugitive'
+Plug 'Yggdroot/indentLine'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/vimfiler.vim'
+Plug 'skywind3000/asyncrun.vim'
+Plug 'jparise/vim-graphql'
+call plug#end()
 
-" Plugins live here
-" vundle - plugin manager
-Plugin 'VundleVim/Vundle.vim'
-" code completion
-Plugin 'Valloric/YouCompleteMe'
-" fuzzy file finder
-Plugin 'ctrlpvim/ctrlp.vim'
-" commenting shortcut
-Plugin 'tpope/vim-commentary'
-" zen coding
-Plugin 'mattn/emmet-vim'
-" status bar
-Plugin 'itchyny/lightline.vim'
-" Base JS and JSX react highlighting support
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-" surround vim
-Plugin 'tpope/vim-surround'
-" abolish vim
-Plugin 'tpope/vim-abolish'
-" fugitive
-Plugin 'tpope/vim-fugitive'
-" indent lines
-Plugin 'Yggdroot/indentLine'
+let g:ctrlp_map = '<c-f>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
-"vim lsp
-
-Plugin 'prabirshrestha/async.vim'
-Plugin 'prabirshrestha/vim-lsp'
-
-"Async lint engine
-Plugin 'w0rp/ale'
+let g:vim_json_conceal=0
 let g:ale_fixers = {
  \ 'javascript': ['eslint']
  \ }
@@ -52,51 +46,11 @@ let g:ale_fix_on_save = 1
 " ALE Config
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 
-" Open quickfix easier
-map <c-q> :cw<CR>
-:set splitright
-
-
-" vimfiler file explorer
-Plugin 'Shougo/unite.vim'
-Plugin 'Shougo/vimfiler.vim'
-:let g:vimfiler_as_default_explorer = 1
-map <c-e> :VimFilerExplorer<CR>
-
-
-
-" Async run
-Plugin 'skywind3000/asyncrun.vim'
-
 " Run eslint on save
 autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --fix %
 
-" graphql support
-Plugin 'jparise/vim-graphql'
-
-" change ctrlp command
-
-let g:ctrlp_map = '<c-f>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-
-" snippets
-" Track the engine.
-" Plugin 'SirVer/ultisnips'
-
-
-" " Snippets are separated from the engine. Add this if you want them:
-" Plugin 'honza/vim-snippets'
-
-" " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-" let g:UltiSnipsExpandTrigger="<c-s>"
-" let g:UltiSnipsJumpForwardTrigger="<c-b>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-
-call vundle#end()
-
-filetype plugin indent on
-
-" Disable quote concealing in JSON files
-let g:vim_json_conceal=0
+" Open quickfix easier
+map <c-q> :cw<CR>
+:set splitright
+:let g:vimfiler_as_default_explorer = 1
+map <c-e> :VimFilerExplorer<CR>
