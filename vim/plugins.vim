@@ -24,9 +24,16 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'Shougo/unite.vim'
-Plug 'Shougo/vimfiler.vim'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'jparise/vim-graphql'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'airblade/vim-gitgutter'
+Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 let g:ctrlp_map = '<c-f>'
@@ -52,5 +59,31 @@ autocmd BufWritePost *.js AsyncRun -post=checktime ./node_modules/.bin/eslint --
 " Open quickfix easier
 map <c-q> :cw<CR>
 :set splitright
-:let g:vimfiler_as_default_explorer = 1
-map <c-e> :VimFilerExplorer<CR>
+
+"Switching to nerdtree
+":let g:vimfiler_as_default_explorer = 1
+"map <c-e> :VimFilerExplorer<CR>
+
+let g:NERDTreeGitStatusWithFlags = 1
+let g:NERDTreeIgnore = ['^node_modules$']
+nmap <C-n> :NERDTreeToggle<CR>
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" sync open file with NERDTree
+" " Check if NERDTree is open or active
+function! IsNERDTreeOpen()        
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+endfunction
+
+" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+" file, and we're not in vimdiff
+function! SyncTree()
+  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    NERDTreeFind
+    wincmd p
+  endif
+endfunction
+
+" Highlight currently open buffer in NERDTree
+autocmd BufEnter * call SyncTree()
