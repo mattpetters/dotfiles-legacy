@@ -23,6 +23,8 @@ nnoremap k gk
 
 " jk is escape
 inoremap jk <esc>
+" Disable quote concealing in JSON files
+let g:vim_json_conceal=0
 
 " remap pane switching
 map <C-j> <C-W>j

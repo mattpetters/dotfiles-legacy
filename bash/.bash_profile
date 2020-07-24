@@ -29,3 +29,5 @@ export INSTANCE_PROFILE_ARN=
 export ROLE_NAME=
 export INSTANCE_PROFILE_ARN=
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"

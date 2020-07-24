@@ -12,8 +12,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-fugitive'
@@ -32,6 +32,8 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
@@ -69,6 +71,9 @@ let g:NERDTreeIgnore = ['^node_modules$']
 nmap <C-n> :NERDTreeToggle<CR>
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
+autocmd FileType typescriptreact setlocal commentstring={/*\ %s\ */}
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
