@@ -13,3 +13,11 @@ alias matrix="~/.dotfiles/shells/scripts/matrix.sh"
 #     echo $@
 #     curl -u 'mattpetters' https://api.github.com/user/repos -d "{\"name\":\"$@\"}"
 # }
+
+dka(){
+    docker stop $(docker ps -a -q); docker rm $(docker ps -a -q);
+}
+
+dprune(){
+    docker system prune
+}
