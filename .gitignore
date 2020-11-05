@@ -3,3 +3,5 @@ study.sh
 vim/plugins
 vim/bundle
 zsh/.oh-my-zsh/cache/
+.DS_Store
+

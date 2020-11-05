@@ -8,7 +8,7 @@ alias ll='ls -la'
 alias mvim="/Applications/MacVim.app/contents/MacOS/MacVim"
 alias gac="git add --all && git commit"
 alias gits="git status"
-alias matrix="./matrix.sh"
+alias matrix="~/.dotfiles/shells/scripts/matrix.sh"
 # gh_create() { 
 #     echo $@
 #     curl -u 'mattpetters' https://api.github.com/user/repos -d "{\"name\":\"$@\"}"
