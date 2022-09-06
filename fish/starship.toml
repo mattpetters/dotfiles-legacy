@@ -1,2 +1,10 @@
 [gcloud]
 disabled = true
+
+[nodejs]
+format="• [$symbol($version )]($style)"
+version_format="v${major}"
+
+[python]
+format='• [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+version_format="v${major}"
