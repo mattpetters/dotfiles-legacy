@@ -1,10 +1,17 @@
+
+# Move the directory to the second line
+format = "$all$directory$character"
+
+[git_branch]
+format="[$symbol$branch(:$remote_branch)]($style) "
+
 [gcloud]
 disabled = true
 
 [nodejs]
-format="• [$symbol($version )]($style)"
+format="|[$symbol($version )]($style)"
 version_format="v${major}"
 
 [python]
-format='• [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format='|[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 version_format="v${major}"
