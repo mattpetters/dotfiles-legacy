@@ -1,3 +1,7 @@
+# set nvim as default editor
+set -gx EDITOR nvim
+
+
 function dka
     docker stop $(docker ps -a -q); docker rm $(docker ps -a -q);
 end
@@ -7,7 +11,8 @@ function glm
 end
 
 function gac
-    git add --all && git commit
+    git add --all
+    git commit
 end
 
 function cf
