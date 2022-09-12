@@ -17,3 +17,12 @@ end
 function dprune
     docker system prune --all
 end
+
+function repo
+    open $(git remote get-url origin)
+end
+
+alias y="yarn"
+alias vim="nvim"
+
+alias vimrc="nvim ~/.vimrc"
