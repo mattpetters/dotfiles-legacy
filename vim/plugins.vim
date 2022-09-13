@@ -6,6 +6,8 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" INSTALLATION
+
 call plug#begin('~/.vim/plugged')
 " Themes
 
@@ -77,16 +79,30 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 " Typescript
 Plug 'HerringtonDarkholme/yats.vim'
+
+
+" Telescope over fzf lol
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
 " Fzf fuzzy file finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+
+
 "Tmux stuff
 Plug 'christoomey/vim-tmux-navigator'
 
+" Wakatime
+Plug 'wakatime/vim-wakatime'
+
 call plug#end()
 
+" CONFIGURATION
+
 " set up fzf for finding files
-nmap <C-P> :FZF<CR>
+" nmap <C-P> :FZF<CR>
 
 " let g:ctrlp_map = '<c-f>'
 " let g:ctrlp_cmd = 'CtrlP'
@@ -128,14 +144,11 @@ map <c-q> :cw<CR>
 :set splitright
 
 "Switching to nerdtree
-":let g:vimfiler_as_default_explorer = 1
-"map <c-e> :VimFilerExplorer<CR>
 
 let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeIgnore = ['^node_modules$']
 nmap <C-n> :NERDTreeToggle<CR>
 
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
 autocmd FileType typescriptreact setlocal commentstring={/*\ %s\ */}
@@ -145,6 +158,9 @@ autocmd FileType typescriptreact setlocal commentstring={/*\ %s\ */}
 function! IsNERDTreeOpen()        
   return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
+
+" Always show hidden files
+let NERDTreeShowHidden=1
 
 " Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
 " file, and we're not in vimdiff
@@ -159,8 +175,16 @@ endfunction
 autocmd BufEnter * call SyncTree()
 
 " fzf config
-set rtp+=/usr/local/opt/fzf
+" set rtp+=/usr/local/opt/fzf
 
+"Telescope config
+" Using Lua functions
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+nmap <C-P> <cmd>lua require('telescope.builtin').find_files()<cr>
 
 " IndentLine {{
 let g:indentLine_char = '|'

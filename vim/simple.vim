@@ -36,3 +36,10 @@ map <C-l> <C-W>l
 " turn hybrid line numbers on
 :set number relativenumber
 :set nu rnu
+
+" code folding
+" https://unix.stackexchange.com/questions/141097/how-to-enable-and-use-code-folding-in-vim
+set foldmethod=indent   
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2

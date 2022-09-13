@@ -31,3 +31,6 @@ alias y="yarn"
 alias vim="nvim"
 
 alias vimrc="nvim ~/.vimrc"
+
+set FZF_DEFAULT_COMMAND 'rg --files'
+
