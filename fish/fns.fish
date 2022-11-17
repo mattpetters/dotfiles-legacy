@@ -20,7 +20,7 @@ function cf
 end
 
 function dprune
-    docker system prune --all
+    docker system prune -a --volumes
 end
 
 function repo
