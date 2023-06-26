@@ -2,6 +2,9 @@
 
 now using `fish` shell
 
+## Install
+`git clone https://github.com/mattpetters/dotfiles.git ~/.dotfiles`
+
 ## Commands Cheatsheet
 
 ### General
