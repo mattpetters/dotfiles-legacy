@@ -2,6 +2,6 @@ of.scpt
 study.sh
 vim/plugins
 vim/bundle
-zsh/.oh-my-zsh/cache/
+zsh/.oh-my-zsh
 .DS_Store
 
