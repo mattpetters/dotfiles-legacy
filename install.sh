@@ -6,3 +6,7 @@ source $HOME/.dotfiles/install_general.sh
 
 # set up configs
 source $HOME/.dotfiles/setup_configs.sh
+
+# set up utility scripts
+
+git clone https://github.com/mattpetters/utils.git $HOME/code/utils
