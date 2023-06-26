@@ -8,5 +8,6 @@ source $HOME/.dotfiles/install_general.sh
 source $HOME/.dotfiles/setup_configs.sh
 
 # set up utility scripts
-
 git clone https://github.com/mattpetters/utils.git $HOME/code/utils
+
+echo 'export PATH="$HOME/code/utils:$PATH"' >> ~/.zshrc
