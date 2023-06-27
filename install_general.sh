@@ -30,3 +30,6 @@ brew install --cask iterm2
 
 # install intellij
 brew install --cask intellij-idea
+
+# install amethyst for wm
+brew install --cask amethyst
