@@ -27,3 +27,6 @@ brew install --cask visual-studio-code-insiders
 
 # install iterm2
 brew install --cask iterm2
+
+# install intellij
+brew install --cask intellij-idea
