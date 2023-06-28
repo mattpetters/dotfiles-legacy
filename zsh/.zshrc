@@ -4,6 +4,16 @@ source $HOME/.dotfiles/aliases.sh
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# stuff to display on launch
+
+$HOME/code/utils/days_left.py -b 07-10-1992 -d 85
+
+# maybe add some stoicism quote here
+
+neofetch
+
+motivate
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

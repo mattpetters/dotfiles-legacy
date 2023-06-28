@@ -1,1 +1,0 @@
-/usr/local/bin/icalBuddy -n -li 1 -iep title,datetime -ec 'Birthdays' -ps '/|/' eventsToday+10 | sed 's/^.*(\\(.*\\)).*uid: \\(.*\\)$/\\1|\\2/' | awk -F "|" '{print substr($1,3,10) "... / " substr($2,10,18)}'
