@@ -8,6 +8,7 @@ alias cf="cd ~/code"
 alias dots="cd ~/.dotfiles"
 alias aliases="vim ~/.dotfiles/aliases.sh"
 alias reload="source ~/.zshrc"
+alias nvplugs="vim ~/.config/nvim/lua/custom/plugins.lua"
 
 dka(){
     docker stop $(docker ps -a -q); docker rm $(docker ps -a -q);
